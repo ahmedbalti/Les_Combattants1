@@ -720,7 +720,7 @@
             if (c.height != canvasHeight)
                 c.height = canvasHeight;
 
-            // so try to get back to the initial state (even if it's
+            // so try to get Front to the initial state (even if it's
             // gone now, this should be safe according to the spec)
             var cctx = c.getContext("2d");
             cctx.restore();

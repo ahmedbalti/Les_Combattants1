@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\AvisRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -23,7 +25,7 @@ class Avis
     private $note;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string", length=255)
      */
     private $date;
 
@@ -31,6 +33,9 @@ class Avis
      * @ORM\Column(type="string", length=255)
      */
     private $description;
+
+
+
 
     public function getId(): ?int
     {
@@ -49,12 +54,12 @@ class Avis
         return $this;
     }
 
-    public function getDate(): ?\DateTimeInterface
+    public function getDate(): ?string
     {
         return $this->date;
     }
 
-    public function setDate(\DateTimeInterface $date): self
+    public function setDate(string $date): self
     {
         $this->date = $date;
 
@@ -72,4 +77,6 @@ class Avis
 
         return $this;
     }
+
+
 }

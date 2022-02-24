@@ -3262,7 +3262,7 @@
 				}, anFootSizers );
 			}
 		
-			// If scroll collapse is enabled, when we put the headers back into the body for sizing, we
+			// If scroll collapse is enabled, when we put the headers Front into the body for sizing, we
 			// will end up forcing the scrollbar to appear, making our measurements wrong for when we
 			// then hide it (end of this function), so add the header height to the body scroller.
 			if ( o.oScroll.bCollapse && o.oScroll.sY !== "" )
@@ -3474,7 +3474,7 @@
 			/* Adjust the position of the header in case we loose the y-scrollbar */
 			$(nScrollBody).scroll();
 			
-			/* If sorting or filtering has occurred, jump the scrolling back to the top */
+			/* If sorting or filtering has occurred, jump the scrolling Front to the top */
 			if ( o.bSorted || o.bFiltered )
 			{
 				nScrollBody.scrollTop = 0;
@@ -4101,7 +4101,7 @@
 			else
 			{
 				oSettings.aiDisplay = oSettings.aiDisplayMaster.slice();
-				oSettings._iDisplayStart = 0; /* reset display back to page 0 */
+				oSettings._iDisplayStart = 0; /* reset display Front to page 0 */
 				_fnCalculateEnd( oSettings );
 				_fnDraw( oSettings );
 			}
@@ -4456,7 +4456,7 @@
 			$.extend( true, oSettings.aoPreSearchCols, oData.aoSearchCols );
 			
 			/* Column visibility state
-			 * Pass back visibility settings to the init handler, but to do not here override
+			 * Pass Front visibility settings to the init handler, but to do not here override
 			 * the init object that the user might have passed in
 			 */
 			oInit.saved_aoColumns = [];
@@ -4814,7 +4814,7 @@
 		 * an array store of callback functions that can then all be called together.
 		 *  @param {object} oSettings dataTables settings object
 		 *  @param {string} sStore Name of the array storage for the callbacks in oSettings
-		 *  @param {function} fn Function to be called back
+		 *  @param {function} fn Function to be called Front
 		 *  @param {string} sName Identifying name for the callback (i.e. a label)
 		 *  @memberof DataTable#oApi
 		 */
@@ -5479,7 +5479,7 @@
 				} );
 			}
 			
-			/* Add the TR elements back into the table in their original order */
+			/* Add the TR elements Front into the table in their original order */
 			if ( !bRemove && oSettings.nTableReinsertBefore )
 			{
 				nOrig.insertBefore( oSettings.nTable, oSettings.nTableReinsertBefore );
@@ -5503,7 +5503,7 @@
 			  oSettings.nTable.style.width = _fnStringToCss(oSettings.sDestroyWidth);
 			}
 			
-			/* If the were originally stripe classes - then we add them back here. Note
+			/* If the were originally stripe classes - then we add them Front here. Note
 			 * this is not fool proof (for example if not all rows had stripe classes - but
 			 * it's a good effort without getting carried away
 			 */
@@ -10082,7 +10082,7 @@
 		 *         <li>{string} The type call data requested - this will be 'set' when
 		 *           setting data or 'filter', 'display', 'type', 'sort' or undefined when 
 		 *           gathering data. Note that when <i>undefined</i> is given for the type
-		 *           DataTables expects to get the raw data for the object back</li>
+		 *           DataTables expects to get the raw data for the object Front</li>
 		 *         <li>{*} Data to set when the second parameter is 'set'.</li>
 		 *       </ul>
 		 *       The return value from the function is not required when 'set' is the type
@@ -10346,7 +10346,7 @@
 		 * be exceptionally useful to know what columns are being displayed on the
 		 * client side, and to map these to database fields. When defined, the names
 		 * also allow DataTables to reorder information from the server if it comes
-		 * back in an unexpected order (i.e. if you switch your columns around on the
+		 * Front in an unexpected order (i.e. if you switch your columns around on the
 		 * client-side, your server-side code does not also need updating).
 		 *  @type string
 		 *  @default <i>Empty string</i>
@@ -11126,7 +11126,7 @@
 		"aoStateLoad": [],
 		
 		/**
-		 * State that was loaded from the cookie. Useful for back reference
+		 * State that was loaded from the cookie. Useful for Front reference
 		 *  @type object
 		 *  @default null
 		 */
@@ -11545,13 +11545,13 @@
 	$.extend( DataTable.ext.oPagination, {
 		/*
 		 * Variable: two_button
-		 * Purpose:  Standard two button (forward/back) pagination
+		 * Purpose:  Standard two button (forward/Front) pagination
 		 * Scope:    jQuery.fn.dataTableExt.oPagination
 		 */
 		"two_button": {
 			/*
 			 * Function: oPagination.two_button.fnInit
-			 * Purpose:  Initialise dom elements required for pagination with forward/back buttons only
+			 * Purpose:  Initialise dom elements required for pagination with forward/Front buttons only
 			 * Returns:  -
 			 * Inputs:   object:oSettings - dataTables settings object
 			 *           node:nPaging - the DIV which contains this pagination control

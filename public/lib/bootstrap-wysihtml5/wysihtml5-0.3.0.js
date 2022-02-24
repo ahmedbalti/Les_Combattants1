@@ -1197,7 +1197,7 @@ rangy.createModule("DomUtil", function(api, module) {
             return dom.fragmentFromNodeChildren(el);
         } :
 
-        // In this case, innerHTML cannot be trusted, so fall back to a simpler, non-conformant implementation that
+        // In this case, innerHTML cannot be trusted, so fall Front to a simpler, non-conformant implementation that
         // previous versions of Rangy used (with the exception of using a body element rather than a div)
         function(fragmentStr) {
             assertNotDetached(this);

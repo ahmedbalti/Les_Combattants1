@@ -25,7 +25,7 @@ class ReponseReclamationController extends AbstractController
     }
 
     /**
-     * @Route("/read", name="read")
+     * @Route("/readR", name="read")
      */
     public function read(): Response
     {
@@ -38,7 +38,7 @@ class ReponseReclamationController extends AbstractController
     }
 
     /**
-     * @Route("/delete/{id}", name="delete")
+     * @Route("/deleteR/{id}", name="deleteR")
      */
     public function delete($id)
     {
@@ -73,7 +73,7 @@ class ReponseReclamationController extends AbstractController
     }
 
     /**
-     * @Route ("/update/{id}",name="update")
+     * @Route ("/updateR/{id}",name="updateR")
      */
 
     function update(ReponseReclamationRepository $repository, $id, Request $request)

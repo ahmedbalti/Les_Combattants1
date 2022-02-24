@@ -293,7 +293,7 @@
 			}
 
 			// We set the fourth param to let the _fade function know to 
-			// unbind the "mouseleave" event.  Once you click (X) there's no going back!
+			// unbind the "mouseleave" event.  Once you click (X) there's no going Front!
 			this._fade(e, unique_id, params || {}, unbind_events);
 			
 		},
