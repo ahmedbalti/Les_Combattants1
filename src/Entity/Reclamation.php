@@ -23,7 +23,7 @@ class Reclamation
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Assert\NotBlank (message="vous devez ajouter une description")
+     * @Assert\NotBlank(message="vous devez ajouter une description")
      */
     private $description;
 
